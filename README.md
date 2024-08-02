@@ -13,7 +13,7 @@
 
 ### Screenshot
 
-<img src="https://i.ibb.co/5xL1XX0/photo-2024-08-02-22-09-31.jpg" width="400" alt="AnimeStream Screenshot">
+<img src="https://i.ibb.co/5xL1XX0/photo-2024-08-02-22-09-31.jpg" width="250" alt="AnimeStream Screenshot">
 
 ## AnimeNews
 
@@ -26,7 +26,7 @@
 
 ### Screenshot
 
-<img src="https://i.ibb.co/bXbCvqb/photo-2024-08-02-22-09-31-2.jpg" width="400" alt="AnimeNews Screenshot">
+<img src="https://i.ibb.co/bXbCvqb/photo-2024-08-02-22-09-31-2.jpg" width="250" alt="AnimeNews Screenshot">
 
 ## Kontribusi
 
