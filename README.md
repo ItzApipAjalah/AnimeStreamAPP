@@ -2,14 +2,14 @@
 
 ## AnimeStream
 
-**AnimeStream** adalah aplikasi streaming anime berbasis Flutter yang memungkinkan pengguna menonton berbagai seri dan film anime.
+**AnimeStream** is a Flutter-based anime streaming app that allows users to watch various anime series and movies.
 
-### Fitur
+### Features
 
-- **Katalog Anime**: Menampilkan daftar anime terbaru dan selesai.
-- **Pencarian**: Fitur pencarian untuk menemukan anime berdasarkan judul, genre, atau tag.
-- **Streaming**: Menyediakan kemampuan untuk menonton anime langsung dari aplikasi.
-- **Detail Anime**: Menampilkan informasi detail tentang setiap anime, termasuk sinopsis, episode, dan rating.
+- **Anime Catalog**: Displays a list of the latest and completed anime.
+- **Search**: Search functionality to find anime by title, genre, or tag.
+- **Streaming**: Provides the capability to watch anime directly from the app.
+- **Anime Details**: Shows detailed information about each anime, including synopsis, episodes, and ratings.
 
 ### Screenshot
 
@@ -17,17 +17,17 @@
 
 ## AnimeNews
 
-**AnimeNews** adalah aplikasi berita anime yang memberikan update terbaru tentang dunia anime, termasuk berita, ulasan, dan artikel terbaru.
+**AnimeNews** is an anime news app that provides the latest updates about the anime world, including news, reviews, and the latest articles.
 
-### Fitur
+### Features
 
-- **Berita Terbaru**: Menampilkan berita terbaru dari industri anime.
-- **Artikel Detail**: Menyediakan informasi mendetail dan analisis untuk setiap artikel berita.
+- **Latest News**: Displays the latest news from the anime industry.
+- **Article Details**: Provides detailed information and analysis for each news article.
 
 ### Screenshot
 
 <img src="https://i.ibb.co/bXbCvqb/photo-2024-08-02-22-09-31-2.jpg" width="250" alt="AnimeNews Screenshot">
 
-## Kontribusi
+## Contribution
 
-Jika Anda ingin berkontribusi pada proyek ini, silakan buat *pull request* atau buka *issue* dengan ide dan saran. Semua kontribusi diterima dengan baik!
+If you want to contribute to this project, please create a *pull request* or open an *issue* with ideas and suggestions. All contributions are welcome!
