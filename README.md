@@ -13,7 +13,7 @@
 
 ### Screenshot
 
-![Screenshot](https://i.ibb.co.com/5xL1XX0/photo-2024-08-02-22-09-31.jpg)
+<img src="https://i.ibb.co/5xL1XX0/photo-2024-08-02-22-09-31.jpg" width="400" alt="AnimeStream Screenshot">
 
 ## AnimeNews
 
@@ -26,9 +26,8 @@
 
 ### Screenshot
 
-![Screenshot](https://i.ibb.co.com/bXbCvqb/photo-2024-08-02-22-09-31-2.jpg)
+<img src="https://i.ibb.co/bXbCvqb/photo-2024-08-02-22-09-31-2.jpg" width="400" alt="AnimeNews Screenshot">
 
 ## Kontribusi
 
 Jika Anda ingin berkontribusi pada proyek ini, silakan buat *pull request* atau buka *issue* dengan ide dan saran. Semua kontribusi diterima dengan baik!
-
