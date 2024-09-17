@@ -78,19 +78,33 @@ class Episode {
   final String episodeTitle;
   final String episodeEndpoint;
   final String episodeDate;
+  final String lastPlayedTime;
 
   Episode({
     required this.episodeTitle,
     required this.episodeEndpoint,
     required this.episodeDate,
+    required this.lastPlayedTime,
   });
 
+  // Factory method to create an Episode from a JSON map.
   factory Episode.fromJson(Map<String, dynamic> json) {
     return Episode(
       episodeTitle: json['episode_title'] ?? '',
       episodeEndpoint: json['episode_endpoint'] ?? '',
       episodeDate: json['episode_date'] ?? '',
+      lastPlayedTime: json['last_played_time'] ?? 'Unknown',
     );
+  }
+
+  // Converts the Episode object into a JSON map.
+  Map<String, dynamic> toJson() {
+    return {
+      'episode_title': episodeTitle,
+      'episode_endpoint': episodeEndpoint,
+      'episode_date': episodeDate,
+      'last_played_time': lastPlayedTime,
+    };
   }
 }
 
@@ -167,6 +181,10 @@ class AnimeSearchResult {
   final List<String> status;
   final String rating;
   final String endpoint;
+  final int episode;
+  final String image;
+  final double similarity;
+  final String filename;
 
   AnimeSearchResult({
     required this.title,
@@ -175,16 +193,28 @@ class AnimeSearchResult {
     required this.status,
     required this.rating,
     required this.endpoint,
+    required this.episode,
+    required this.image,
+    required this.similarity,
+    required this.filename,
   });
 
   factory AnimeSearchResult.fromJson(Map<String, dynamic> json) {
     return AnimeSearchResult(
       title: json['title'] ?? '',
       thumb: json['thumb'] ?? '',
+      filename: json['filename'] ?? '',
+      episode: (json['episode'] != null && json['episode'] is int)
+          ? json['episode']
+          : int.tryParse(json['episode'].toString()) ?? 0,
+      image: json['image'] ?? '',
       genres: json['genres'] != null ? List<String>.from(json['genres']) : [],
       status: json['status'] != null ? List<String>.from(json['status']) : [],
       rating: json['rating'] ?? '',
       endpoint: json['endpoint'] ?? '',
+      similarity: (json['similarity'] != null && json['similarity'] is double)
+          ? json['similarity']
+          : double.tryParse(json['similarity'].toString()) ?? 0.0,
     );
   }
 }

@@ -9,7 +9,7 @@ class AnimeNewsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Anime News'),
-        backgroundColor: Colors.lightBlue[300],
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
       ),
       body: FutureBuilder<List<News>>(
         future: ApiService().fetchNews(),

@@ -14,7 +14,7 @@ class AnimeDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Anime Details'),
-        backgroundColor: Colors.lightBlue[300],
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
       ),
       body: FutureBuilder<AnimeDetail>(
         future: ApiService().fetchAnimeDetail(animeEndpoint),

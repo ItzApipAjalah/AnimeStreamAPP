@@ -4,12 +4,12 @@ import 'models/anime_model.dart';
 import 'models/news_model.dart';
 
 class ApiService {
-  static const String _searchBaseUrl = 'http://localhost:3000/api/v1/search/';
+  static const String _searchBaseUrl = 'https://localhost:3000/api/v1/search/';
 
   final List<String> _endpoints = [
-    'http://localhost:3000/api/v1/ongoing/1',
-    'http://localhost:3000/api/v1/ongoing/2',
-    'http://localhost:3000/api/v1/ongoing/3',
+    'https://localhost:3000/api/v1/ongoing/1',
+    'https://localhost:3000/api/v1/ongoing/2',
+    'https://localhost:3000/api/v1/ongoing/3',
   ];
 
   static const String _baseUrl =
@@ -44,7 +44,7 @@ class ApiService {
 
   Future<AnimeDetail> fetchAnimeDetail(String endpoint) async {
     final response = await http
-        .get(Uri.parse('http://localhost:3000/api/v1/detail/$endpoint'));
+        .get(Uri.parse('https://localhost:3000/api/v1/detail/$endpoint'));
 
     if (response.statusCode == 200) {
       final jsonData = json.decode(response.body);
@@ -52,7 +52,9 @@ class ApiService {
       final episodeList = (jsonData['episode_list'] as List)
           .map((e) => Episode.fromJson(e))
           .toList();
-      return animeDetail.copyWith(episodeList: episodeList);
+      return animeDetail.copyWith(
+          episodeList:
+              episodeList); // Use a copyWith method if you wish to include episodes
     } else {
       throw Exception('Failed to load anime detail');
     }
@@ -60,7 +62,7 @@ class ApiService {
 
   Future<EpisodeDetail> fetchEpisodeDetail(String endpoint) async {
     final response =
-        await http.get(Uri.parse('http://localhost:3000/scrape/$endpoint'));
+        await http.get(Uri.parse('http://localhost:4000/scrape/$endpoint'));
     if (response.statusCode == 200) {
       return EpisodeDetail.fromJson(jsonDecode(response.body));
     } else {
